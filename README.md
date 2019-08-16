@@ -46,6 +46,8 @@ is 671 bytes:
 <script>cssBlankPseudo(document)</script>
 ```
 
+**Note**: you should include postcss@7 into devDependencies of your project manually. postcss tooling packages require it as a peer and does not install it to avoid swallowing the typical node_modules directory.
+
 ## How it works
 
 The [PostCSS plugin](README-POSTCSS.md) clones rules containing `:blank`,
