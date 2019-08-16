@@ -44,8 +44,8 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "dependencies": {
-    "postcss": "^7.0.17"
+  "peerDependencies": {
+    "postcss": "7"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -53,6 +53,7 @@
     "babel-eslint": "^10.0.1",
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
+    "postcss": "^7.0.17",
     "postcss-tape": "^5.0.0",
     "pre-commit": "^1.2.2",
     "rollup": "^1.14.6",
