@@ -6,20 +6,18 @@ const creator = opts => {
 
 	return {
 		postcssPlugin: 'css-blank-pseudo',
-		Once: root => {
-			root.walkRules(selectorRegExp, rule => {
+		Rule: (rule) => {
+			if (selectorRegExp.test(rule.selector)) {
 				const selector = rule.selector.replace(selectorRegExp, ($0, $1) => {
 					return `${replaceWith}${$1}`;
 				});
 
-				const clone = rule.clone({ selector });
-
 				if (preserve) {
-					rule.before(clone);
+					rule.cloneBefore({ selector: selector });
 				} else {
-					rule.replaceWith(clone);
+					rule.assign({selector: selector});
 				}
-			});
+			}
 		},
 	};
 };
