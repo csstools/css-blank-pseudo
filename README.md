@@ -4,6 +4,12 @@
 [![Build Status][cli-img]][cli-url]
 [![Support Chat][git-img]][git-url]
 
+⚠️ CSS Blank Pseudo was moved to [@csstools/postcss-plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins/css-blank-pseudo
+). ⚠️<br>
+[Read the announcement](https://github.com/csstools/postcss-plugins/discussions/75)
+  
+----------------
+
 [CSS Blank Pseudo] lets you style form elements when they are empty, following
 the [Selectors Level 4] specification.
 
